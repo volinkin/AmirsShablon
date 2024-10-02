@@ -1,0 +1,8 @@
+zaprosUD RT_RCDATA ZaprosUD.sql
+zaprosGD RT_RCDATA ZaprosGD.sql
+zaprosGDIsk RT_RCDATA ZaprosGDIsk.sql
+zaprosAD RT_RCDATA ZaprosAD.sql
+zaprosIU RT_RCDATA ZaprosIU.sql
+zaprosIG RT_RCDATA ZaprosIG.sql
+zaprosAD_SH RT_RCDATA ZaprosADShtraf.sql
+zaprosAD_OR RT_RCDATA ZaprosADObyazRabot.sql
