@@ -919,6 +919,14 @@ void TAmirs::JuridicalPerson(AnsiString OID, AnsiString Prefix)
            //if (!IBQuery->Fields->FieldByName("BirthPlace")->IsNull) this->WordAdd(Prefix+"МестоРождения", AnsiString(IBQuery->Fields->FieldByName("BirthPlace")->Value));
            //if (!IBQuery->Fields->FieldByName("Snils")->IsNull) this->WordAdd(Prefix+"СНИЛС",AnsiString(IBQuery->Fields->FieldByName("Snils")->Value));
            this->Address(OID, Prefix);
+           //Получение ОГРН и ИНН
+           this->GetAllRecForTable (IBQuery, "Subject", "\"OID\"="+OID);
+           IBQuery->First();
+           AnsiString asOgrn, asInn;
+           if (!IBQuery->Fields->FieldByName("Ogrn")->IsNull) asOgrn = IBQuery->Fields->FieldByName("Ogrn")->Value;
+           this->WordAdd(Prefix+"_ОГРН", asOgrn);
+           if (!IBQuery->Fields->FieldByName("Inn")->IsNull) asInn = IBQuery->Fields->FieldByName("Inn")->Value;
+           this->WordAdd(Prefix+"_ИНН", asInn);
            };
           }
           catch(Exception &ex)

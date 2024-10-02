@@ -5,7 +5,7 @@
     <VERSION value="BCB.06.00"/>
     <PROJECT value="ProjectAmirsShablon.exe"/>
     <OBJFILES value="ProjectAmirsShablon.obj UnitAmirsShablon.obj"/>
-    <RESFILES value="ProjectAmirsShablon.res UnitAmirsShablon.res"/>
+    <RESFILES value="UnitAmirsShablon.res"/>
     <IDLFILES value=""/>
     <IDLGENFILES value=""/>
     <DEFFILE value=""/>
@@ -55,7 +55,6 @@
     <OTHERFILES value=""/>
   </LINKER>
   <FILELIST>
-      <FILE FILENAME="ProjectAmirsShablon.res" FORMNAME="" UNITNAME="ProjectAmirsShablon.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="ProjectAmirsShablon.cpp" FORMNAME="" UNITNAME="ProjectAmirsShablon" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="UnitAmirsShablon.cpp" FORMNAME="Form1" UNITNAME="UnitAmirsShablon" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="UnitAmirsShablon.rc" FORMNAME="" UNITNAME="UnitAmirsShablon.rc" CONTAINERID="RCCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
